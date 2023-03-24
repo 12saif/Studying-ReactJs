@@ -7,9 +7,24 @@ const Contant = () => {
     return names[int];
   };
 
+  const handleClick = () => {
+    console.log("Cliked is Work");
+  };
+
+  const handleClick2 = (name) => {
+    console.log(`${name} Was clicked`);
+  };
+
+  const handleClick3 = (e) => {
+    console.log(e);
+  };
+
   return (
     <main>
       <p>Hello {handleNameChange()} !</p>
+      <button onClick={handleClick}>Click it</button>
+      <button onClick={() => handleClick2("Mohammad Saif")}>Click it</button>
+      <button onClick={(e) => handleClick3(e)}>Click it</button>
     </main>
   );
 };
