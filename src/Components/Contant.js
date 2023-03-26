@@ -1,30 +1,36 @@
-import React from "react";
+import { useState } from "react";
 
 const Contant = () => {
+  const [name, setName] = useState("saif");
+  const [count, setCount] = useState(0);
+
   const handleNameChange = () => {
     const names = ["Mohammad Saif", "Saqlain Raza", "Harish Zia"];
     const int = Math.floor(Math.random() * 3);
-    return names[int];
+    setName(names[int]);
   };
 
   const handleClick = () => {
-    console.log("Cliked is Work");
+    setCount(count + 1);
+    setCount(count + 1);
+    console.log(count);
   };
 
-  const handleClick2 = (name) => {
-    console.log(`${name} Was clicked`);
+  const handleClick2 = () => {
+    console.log(count);
   };
 
-  const handleClick3 = (e) => {
-    console.log(e);
-  };
+  // const handleClick3 = (e) => {
+  //   console.log(e);
+  // };
 
   return (
     <main>
-      <p>Hello {handleNameChange()} !</p>
+      <p onDoubleClick={handleClick}>Hello {name} !</p>
+
+      <button onClick={handleNameChange}>Change Name</button>
       <button onClick={handleClick}>Click it</button>
-      <button onClick={() => handleClick2("Mohammad Saif")}>Click it</button>
-      <button onClick={(e) => handleClick3(e)}>Click it</button>
+      <button onClick={handleClick2}>Click it</button>
     </main>
   );
 };
