@@ -1,7 +1,8 @@
-import Header from './Components/Header';
-import Contant from './Components/Contant';
-import Footer from './Components/Footer';
-import State from './Components/State';
+// import Header from './Components/Header';
+// import Contant from './Components/Contant';
+// import Footer from './Components/Footer';
+// import State from './Components/State';
+import LoginForm from './Components/LoginForm';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <Header /> */}
       {/* <Contant /> */}
       {/* <Footer /> */}
-      <State/>
+      {/* <State/> */}
+      <LoginForm/>
     </div>
   );
 }
