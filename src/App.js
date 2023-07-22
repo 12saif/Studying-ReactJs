@@ -2,16 +2,16 @@
 // import Contant from './Components/Contant';
 // import Footer from './Components/Footer';
 // import State from './Components/State';
-import LoginForm from './Components/LoginForm';
+import UseStateObject from './Components/UseStateObject';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       {/* <Header /> */}
       {/* <Contant /> */}
       {/* <Footer /> */}
       {/* <State/> */}
-      <LoginForm/>
+      <UseStateObject />
     </div>
   );
 }
